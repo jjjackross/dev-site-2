@@ -2,5 +2,31 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 20%;
+    justify-content: flex-start;
+    max-width: 25vw;
+    height: 100vh;
+    padding-top: 8vh;
+}
+
+.bottom-nav {
+    align-self: flex-end;
+    color: orange;
+}
+
+svg {
+    width: 25%;
+    fill: var(--color-gray);
+}
+
+a {
+    color: var(--color-gray);
+    text-decoration: none;
+}
+
+.vertical-line {
+    width: 20px;
+    height: 100px;
+    color: blue;
+    background: red;
+    margin: auto;
 }

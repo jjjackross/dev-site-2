@@ -1,0 +1,17 @@
+[
+    {
+        "Name": "Portfolio Site",
+        "Slug": "portfolio-site",
+        "HomePhoto": "/img/Matsui.jpg",
+        "ShortDescription": "Custom Theme Development",
+        "Tags": [
+            "React",
+            "All"
+        ],
+        "Overview": "Matsui America is an innovative company that specializes in next generation technologies that enhance injection molding performance. To build this website, I was provided a Photoshop Design and created the website using Craft CMS, TWIG (PHP Template Engine), Javascript, jQuery, and SASS",
+        "DesktopVideo": "/videos/MatsuiDesktop.mp4",
+        "Key": 1,
+        "Github": "",
+        "Website": "https://www.matsuiamerica.com"
+    }
+]

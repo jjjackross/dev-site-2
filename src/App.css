@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan');
+
 :root {
   --color-cream: #fffcf2;
   --color-clay: #ccc5b9;
@@ -11,8 +13,8 @@
   padding: 0;
   box-sizing: border-box;
   vertical-align: top;
-  font-family: Arial, Helvetica, sans-serif;
-  outline: 1px solid pink;
+  font-family: Spartan, Arial, Helvetica, sans-serif;
+  /* outline: 1px solid pink; */
 }
 
 html {
