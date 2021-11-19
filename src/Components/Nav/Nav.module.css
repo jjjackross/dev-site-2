@@ -1,32 +1,65 @@
 nav {
+    position: relative;
+}
+
+.nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     max-width: 25vw;
     height: 100vh;
-    padding-top: 8vh;
+    padding: 8vh 0;
+    position: relative;
+    z-index: 100;
 }
 
-.bottom-nav {
-    align-self: flex-end;
-    color: orange;
+.navGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 svg {
     width: 25%;
     fill: var(--color-gray);
+    background-color: var(--color-cream);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px 0;
+}
+svg:hover {
+    fill: var(--color-cream);
+    background-color: var(--color-gray);
+    cursor: pointer;
 }
 
 a {
     color: var(--color-gray);
+    background-color: var(--color-cream);
     text-decoration: none;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.vertical-line {
-    width: 20px;
-    height: 100px;
-    color: blue;
-    background: red;
+a:hover {
+    color: var(--color-cream);
+    background-color: var(--color-gray);
+    text-decoration: none;
+    font-weight: 400;
+    margin: 10px 0;
+    border-radius: 5px;
+    /* box-shadow: 0px 9px 20px 8px rgba(37,36,34,0.19); */
+}
+
+.verticalLine {
+    width: 2px;
+    height: 100vh;
+    background: var(--color-clay);
     margin: auto;
+    position: absolute;
+    top: 0;
+    left: 12.5vw;
+    z-index: -100;
 }
