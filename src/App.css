@@ -8,6 +8,10 @@
   --color-red: #eb5e28;
 }
 
+html {
+  background-color: var(--color-cream);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,9 +21,11 @@
   /* outline: 1px solid pink; */
 }
 
-html {
-  background-color: var(--color-cream);
+.App {
+  display: flex;
+  justify-content: space-between;
 }
 
-.App {
+main {
+ width: 75vw;
 }

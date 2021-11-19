@@ -1,5 +1,6 @@
 nav {
     position: relative;
+    display: inline;
 }
 
 .nav {
