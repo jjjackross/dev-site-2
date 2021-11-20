@@ -61,6 +61,6 @@ a:hover {
     margin: auto;
     position: absolute;
     top: 0;
-    left: 12.5vw;
-    z-index: -100;
+    left: 50%;
+    z-index: -1;
 }
