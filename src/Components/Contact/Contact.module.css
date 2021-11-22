@@ -1,0 +1,43 @@
+.container {
+    padding: 8vh 5%;
+    height: 100%;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+input {
+    display: block;
+    padding: 1vh;
+    margin-bottom: 20px;;
+}
+
+input[type=text] {
+ 
+}
+
+input[type=textarea] {
+ 
+}
+
+input[type=submit] {
+    border-radius: 10px;
+    color: var(--color-gray);
+    background-color: var(--color-cream);
+    border-color: var(--color-clay);
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--color-cream);
+    background-color: var(--color-gray);
+    border-color: var(--color-gray);
+}
+
+label {
+    color: var
+}
