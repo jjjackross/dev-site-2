@@ -17,6 +17,12 @@
     justify-content: space-between;
 }
 
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .content > *:not(:first-child) {
     padding: 10px 0;
 }
@@ -29,8 +35,18 @@
     padding-top: 2px;
 }
 
-.threeJS {
-    background-color: var(--color-black);
-    width: 100%;
-    height: 100%;
+.infoButton {
+    border: 1px solid var(--color-black);
+    padding: 10%;
+}
+
+.infoButton:hover {
+    background-color: var(--color-clay);
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .container {
+        flex-direction: column;
+    }
 }

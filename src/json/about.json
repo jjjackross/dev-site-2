@@ -1,6 +1,18 @@
 [
     {
-        "title": "title goes here",
-        "content": "content goes here"
+        "title": "Goals as a Developer",
+        "content": "content1 goes here"
+    },
+    {
+        "title": "My Skillset",
+        "content": "content2 goes here"
+    },
+    {
+        "title": "Ideal Work Environment",
+        "content": "content3 goes here"
+    },
+    {
+        "title": "Interests & Hobbies",
+        "content": "content4 goes here"
     }
 ]

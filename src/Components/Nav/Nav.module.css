@@ -98,3 +98,9 @@ a:active {
     left: 50%;
     z-index: -1;
 }
+
+@media (max-width: 576px) {
+    .nav {
+        display: none;
+    }
+}
