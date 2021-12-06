@@ -6,7 +6,7 @@ import styles from './Nav.module.css';
 const Nav = props => {
     return (
         <nav>
-            <div className={styles.nav}>
+            <div className={styles.desktopNav}>
                 <div className={styles.navGroup}>
                     <Link to="/">HOME</Link>
                     <Link to="/work">WORK</Link>

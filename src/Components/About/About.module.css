@@ -48,5 +48,11 @@
 @media (max-width: 576px) {
     .container {
         flex-direction: column;
+        padding: 5vh 0;
+    }
+    
+    .left, .right {
+        width: 100%;
+        padding: 0 5%;
     }
 }

@@ -7,16 +7,16 @@ const Contact = props => {
             <h1>Contact Me</h1>
             <form>
                 <strong><label>Name</label></strong>
-                <input type="text" />
+                <input type="text" className={styles.input}/>
                 <strong><label>Email</label></strong>
-                <input type="text" />
+                <input type="text" className={styles.input}/>
                 <strong><label>Phone</label></strong>
-                <input type="text" />
+                <input type="text" className={styles.input}/>
                 <strong><label>How did you hear about me?</label></strong>
-                <input type="text" />
+                <input type="text" className={styles.input}/>
                 <strong><label>Message</label></strong>
-                <input type="textarea" />
-                <input type="submit" />
+                <input type="textarea" className={styles.input}/>
+                <input type="submit" className={styles.input}/>
             </form>
         </div>
     )

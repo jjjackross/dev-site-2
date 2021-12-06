@@ -3,7 +3,7 @@ nav {
     display: inline;
 }
 
-.nav {
+.desktopNav {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,7 +100,7 @@ a:active {
 }
 
 @media (max-width: 576px) {
-    .nav {
+    .desktopNav {
         display: none;
     }
 }
