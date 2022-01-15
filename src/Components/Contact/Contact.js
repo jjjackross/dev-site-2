@@ -6,16 +6,14 @@ const Contact = props => {
         <div className={styles.container}>
             <h1>Contact Me</h1>
             <form>
-                <strong><label>Name</label></strong>
+                <strong><label className={styles.label}>Name</label></strong>
                 <input type="text" className={styles.input}/>
-                <strong><label>Email</label></strong>
+                <strong><label className={styles.label}>Email</label></strong>
                 <input type="text" className={styles.input}/>
-                <strong><label>Phone</label></strong>
+                <strong><label className={styles.label}>How did you hear about me?</label></strong>
                 <input type="text" className={styles.input}/>
-                <strong><label>How did you hear about me?</label></strong>
-                <input type="text" className={styles.input}/>
-                <strong><label>Message</label></strong>
-                <input type="textarea" className={styles.input}/>
+                <strong><label className={styles.label}>Message</label></strong>
+                <textarea rows="10" className={styles.input}></textarea>
                 <input type="submit" className={styles.input}/>
             </form>
         </div>

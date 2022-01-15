@@ -99,8 +99,9 @@ svg:active {
     z-index: -1;
 }
 
+/* Hides the desktop navigation and vertical line design on mobile. */
 @media (max-width: 576px) {
-    .desktopNav {
+    .desktopNav, .verticalLine {
         display: none;
     }
 }

@@ -1,4 +1,5 @@
-/* THIS CIRCULAR NAV IS A MODIFIED VERSION OF THE ORIGINAL: https://codepen.io/Kapilnemo/pen/gMgLWr/?editors=1100 */
+/* THIS CIRCULAR NAV IS A MODIFIED VERSION OF THE ORIGINAL: https://codepen.io/Kapilnemo/pen/gMgLWr/?editors=1100 
+MY COMMENTS REFLECT WHAT I THINK IS HAPPENING BUT I AM NOT 100% SURE */
 
 /* HIDES THE INPUT CHECKBOX USED TO TOGGLE NAV */
 .input {position: absolute; display: none}
@@ -28,6 +29,7 @@
     position: absolute;
     overflow: hidden;
     cursor: pointer;
+    border: 1px solid var(--color-black);
 }
 
 .btn {
@@ -118,6 +120,18 @@ input[type=checkbox].input:checked ~ .showMenu .btn .closeBtn {
 .mobileLink {
     color: var(--color-black);
     text-decoration: none;
+}
+
+/* STYLES THE TEXT IN THE MOBILE NAV */
+.mobileNavText {
+    font-weight: 700;
+    font-size: .8rem;
+    color: var(--color-black);
+}
+
+/* STYLES THE MATERIAL ICONS IN THE MOBILE NAV */
+i {
+    color: var(--color-black);
 }
 
 @media (min-width: 577px) {

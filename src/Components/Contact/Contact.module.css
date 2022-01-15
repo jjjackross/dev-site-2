@@ -1,5 +1,5 @@
 .container {
-    padding: 8vh 5%;
+    padding: 5vh 3vw;
     height: 100%;
 }
 
@@ -7,37 +7,82 @@ h1 {
     margin-bottom: 10px;
 }
 
-.input {
+.input:not(:last-child) {
     display: block;
     padding: 1vh;
     margin-bottom: 20px;;
 }
 
 input[type=text] {
- 
-}
-
-input[type=textarea] {
-    
-}
-
-.input[type=submit] {
-    border-radius: 10px;
-    color: var(--color-gray);
+    width: 400px;
     background-color: var(--color-cream);
     border-color: var(--color-clay);
-    padding: 15px;
-    font-size: 1.2rem;
+    border-style: solid;
+    border-radius: 4px;
 }
 
-.input[type=submit]:hover {
+input[type=text]:active {
+    border-color: var(--color-gray);
+}
+
+textarea {
+    width: 400px;
+    resize: none;
+    min-height: 40px;
+    max-height: 40vh;
+    background-color: var(--color-cream);
+    border-color: var(--color-clay);
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 2px;
+}
+
+input[type=submit] {
+    border-radius: 10px;
+    color: var(--color-cream);
+    background-color: var(--color-red);
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    margin-left: 300px;
+
+}
+
+input[type=submit]:hover {
     cursor: pointer;
-    font-weight: 600;
     color: var(--color-cream);
     background-color: var(--color-gray);
     border-color: var(--color-gray);
 }
 
-label {
-    color: var
+input[type=submit]:active {
+    background-color: var(--color-black);
+}
+
+.label {
+    color: var(--color-gray);
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 5vh 5vw;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    input[type=text] {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    input[type=submit] {
+        margin: auto;
+        float: right;
+        height: 50px;
+    }
 }

@@ -1,0 +1,18 @@
+.messsageContainer {
+    margin: auto;
+    padding-top: 25%;
+    text-align: center;
+}
+.messsageContainer > h3 {
+    padding-top: 30px
+}
+
+.backMessage {
+    text-decoration: none;
+    color: var(--color-gray);
+}
+
+.backMessage:hover {
+    font-weight: 700;
+    color: var(--color-black);
+}
