@@ -1,0 +1,33 @@
+.infoButton {
+    border: 1px solid var(--color-black);
+    padding: 10%;
+}
+
+.infoButton:hover {
+    background-color: var(--color-clay);
+    cursor: pointer;
+}
+
+.infoButton ul {
+    list-style-type: none;
+}
+
+.bullet {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.bullet:first-of-type {
+    padding-top: 25px;
+}
+
+@media (max-width: 576px) {
+    .infoButton {
+        margin: 10px 0;
+        padding: 5%;
+    }
+
+    .infoButton:last-child {
+        margin-bottom: 120px;
+    }
+}

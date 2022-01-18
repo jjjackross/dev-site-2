@@ -1,26 +1,18 @@
 [
     {
         "title": "Goals as a Developer",
-        "content1": "To consistently write quality code that follows industry best practices",
-        "content2": "To make a noticeably positive impact on a team, product or company",
-        "content3": "To constantly improve and learn using all available resources"
+        "content": ["To consistently write quality code that follows industry best practices", "To make a noticeably positive impact on a team, product or company", "To constantly improve and learn using all available resources"]
     },
     {
         "title": "My Skillset",
-        "content1": "content1 goes here",
-        "content2": "content1 goes here",
-        "content3": "content1 goes here"
+        "content": ["content1 goes here", "content2 goes here", "content3 goes here"]
     },
     {
         "title": "Ideal Work Environment",
-        "content1": "Has compassionate team members who enjoy collaborating",
-        "content2": "Creates a productive atmosphere to maximize efficiency",
-        "content3": "Possesses an overall positive and optimistic ambience"
+        "content": ["Has compassionate team members who enjoy collaborating", "Creates a productive atmosphere to maximize efficiency", "Possesses an overall positive and optimistic ambience"]
     },
     {
         "title": "Interests & Hobbies",
-        "content1": "Videography and video editing",
-        "content2": "DJing and creating fun beats in Ableton Live",
-        "content3": "Casual and competitive gaming with friends"
+        "content": ["Videography and video editing", "DJing and creating fun beats in Ableton Live", "Casual and competitive gaming with friends"]
     }
 ]

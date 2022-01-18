@@ -24,10 +24,12 @@ html {
 .App {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 main {
  width: 75vw;
+ overflow: hidden;
 }
 
 h1 {

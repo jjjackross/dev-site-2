@@ -4,6 +4,7 @@
     text-align: center;
     padding: 8vh 0;
     height: 100%;
+    overflow: hidden;
 }
 
 .left, .right {
@@ -21,6 +22,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: auto;
 }
 
 .content > *:not(:first-child) {
@@ -40,16 +42,6 @@
     line-height: 1.8;
 }
 
-.infoButton {
-    border: 1px solid var(--color-black);
-    padding: 10%;
-}
-
-.infoButton:hover {
-    background-color: var(--color-clay);
-    cursor: pointer;
-}
-
 @media (max-width: 576px) {
     .container {
         flex-direction: column;
@@ -61,12 +53,7 @@
         padding: 0 5%;
     }
 
-    .infoButton {
+    .content p {
         margin: 10px 0;
-        padding: 5%;
-    }
-
-    .infoButton:last-child {
-        margin-bottom: 120px;
     }
 }
