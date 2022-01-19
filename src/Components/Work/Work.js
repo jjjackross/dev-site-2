@@ -3,7 +3,15 @@ import styles from './Work.module.css';
 
 const Work = props => {
     return (
-        <h1>Work Loaded.</h1>
+        <div className={styles.container}>
+            <div className={styles.left}>
+                Work
+            </div>
+
+            <div className={styles.right}>
+                Loaded
+            </div>
+        </div>
     )
 }
 

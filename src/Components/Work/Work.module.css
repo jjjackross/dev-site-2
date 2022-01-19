@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 8vh 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.left, .right {
+    width: 50%;
+    padding: 0 5%;
+}
+
+@media (max-width: 576px) {
+    .container {
+        flex-direction: column;
+        padding: 5vh 0 0 0;
+    }
+    
+    .left, .right {
+        width: 100%;
+        padding: 0 5%;
+    }
+}

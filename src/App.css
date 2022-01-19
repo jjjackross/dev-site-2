@@ -24,7 +24,7 @@ html {
 .App {
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 main {

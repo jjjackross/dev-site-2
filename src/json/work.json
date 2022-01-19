@@ -1,7 +1,6 @@
 [
     {
         "Name": "Portfolio Site",
-        "Slug": "portfolio-site",
         "HomePhoto": "/img/Matsui.jpg",
         "ShortDescription": "Custom Theme Development",
         "Tags": [
@@ -12,6 +11,6 @@
         "DesktopVideo": "/videos/MatsuiDesktop.mp4",
         "Key": 1,
         "Github": "",
-        "Website": "https://www.matsuiamerica.com"
+        "Website": "https://www.jackross.dev"
     }
 ]

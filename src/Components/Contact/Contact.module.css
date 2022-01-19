@@ -1,6 +1,14 @@
 .container {
-    padding: 5vh 3vw;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 8vh 0;
     height: 100%;
+    overflow: hidden;
+}
+
+.left {
+    padding: 0 5%;
 }
 
 h1 {
@@ -63,12 +71,41 @@ input[type=submit]:active {
     color: var(--color-gray);
 }
 
+.thankYouMessage {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+}
+
+.backMessage {
+    text-decoration: none;
+    color: var(--color-gray);
+    padding-top: 20px;
+}
+
+.backMessage:hover {
+    font-weight: 700;
+    color: var(--color-black);
+}
+
 @media (max-width: 576px) {
     .container {
-        padding: 5vh 5vw;
+        flex-direction: column;
+        padding: 5vh 0 0 0;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding: 0 5%;
     }
 
     h1 {
+        text-align: center;
+    }
+
+    .thankYouMessage {
         text-align: center;
     }
 
