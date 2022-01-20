@@ -1,11 +1,16 @@
 .infoButton {
     border: 1px solid var(--color-black);
     padding: 10%;
+    border-radius: 10px;
 }
 
 .infoButton:hover {
     background-color: var(--color-clay);
     cursor: pointer;
+}
+
+.infoButton:active {
+    border: 2px solid var(--color-gray);
 }
 
 .infoButton ul {

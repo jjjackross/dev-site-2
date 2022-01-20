@@ -1,9 +1,10 @@
 import react from "react";
+
 import styles from './About.module.css';
 
 import InfoCard from '../InfoCard/InfoCard';
 
-const moreInfo = require('../../json/about.json')
+const infoData = require('../../json/about.json')
 
 const About = props => {
     
@@ -21,7 +22,7 @@ const About = props => {
 
             <div className={styles.right}>
                 {
-                    moreInfo.map((info, i) => {
+                    infoData.map((info, i) => {
                         return <InfoCard info={info} key={i} />
                     })
                 }

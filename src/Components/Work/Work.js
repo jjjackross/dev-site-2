@@ -1,15 +1,42 @@
-import react from "react";
+import react, { useState } from "react";
+
 import styles from './Work.module.css';
 
+import ProjectInfo from '../ProjectInfo/ProjectInfo';
+
+const workData = require('../../json/work.json')
+
+
 const Work = props => {
+    const [projectId, setProjectId] = useState(null);
+    const selectProject = (id) => {
+        setProjectId(id);
+    }
+
     return (
         <div className={styles.container}>
             <div className={styles.left}>
-                Work
+            <h2 className={styles.workTitle}>Projects</h2>
+                {
+                    workData.map((work, i) => {
+                        return (
+                        <div className={styles.projectButton} onClick={() => selectProject(i)}>
+                            <h3>{workData[i].Name}</h3>
+                            <p>{workData[i].ShortDescription}</p>
+                        </div>
+                        )
+                    })
+                }
             </div>
 
+            <div className={ styles.verticalLine } />
+
             <div className={styles.right}>
-                Loaded
+                {
+                    projectId === null ?
+                    <h3 className={styles.getStarted}>Select a project to get started!</h3> :
+                    <ProjectInfo projectData={workData[projectId]} key={projectId}></ProjectInfo>
+                }
             </div>
         </div>
     )

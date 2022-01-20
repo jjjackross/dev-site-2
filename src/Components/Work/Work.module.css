@@ -1,15 +1,69 @@
 .container {
     display: flex;
     justify-content: space-between;
-    text-align: center;
     padding: 8vh 0;
     height: 100%;
     overflow: hidden;
 }
 
 .left, .right {
-    width: 50%;
     padding: 0 5%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 35%;
+}
+
+.workTitle {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: var(--color-red);
+}
+
+.right {
+    width: 65%;
+}
+
+.getStarted {
+    margin-top: 100px;
+}
+
+.projectButton {
+    border: 1px solid var(--color-black);
+    padding: 8%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.projectButton p {
+    font-size: 1rem;
+}
+
+.projectButton:hover {
+    background-color: var(--color-clay);
+    cursor: pointer;
+}
+
+.projectButton:active {
+    border: 2px solid var(--color-gray);
+}
+
+.projectButton:last-of-type {
+    margin-bottom: 0;
+}
+
+.verticalLine {
+    width: 2px;
+    height: 100%;
+    background: var(--color-clay);
+    margin: auto;
+    /* position: absolute; */
+    top: 0;
+    left: 50%;
+    z-index: -1;
 }
 
 @media (max-width: 576px) {
@@ -21,5 +75,14 @@
     .left, .right {
         width: 100%;
         padding: 0 5%;
+    }
+
+    .right {
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .verticalLine {
+        display: none;
     }
 }

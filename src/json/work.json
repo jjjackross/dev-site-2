@@ -2,15 +2,21 @@
     {
         "Name": "Portfolio Site",
         "HomePhoto": "/img/Matsui.jpg",
-        "ShortDescription": "Custom Theme Development",
-        "Tags": [
-            "React",
-            "All"
-        ],
+        "ShortDescription": "A place to showcase my projects",
         "Overview": "Matsui America is an innovative company that specializes in next generation technologies that enhance injection molding performance. To build this website, I was provided a Photoshop Design and created the website using Craft CMS, TWIG (PHP Template Engine), Javascript, jQuery, and SASS",
-        "DesktopVideo": "/videos/MatsuiDesktop.mp4",
-        "Key": 1,
-        "Github": "",
-        "Website": "https://www.jackross.dev"
+        "Tags": [
+            {"React": "https://reactjs.org/"},
+            {"Netlify": "https://www.netlify.com/"},
+            {"Node": "https://nodejs.org/en/"},
+            {"JavaScript": "https://www.javascript.com/"},
+            {"HTML": "https://developer.mozilla.org/en-US/docs/Web/HTML"},
+            {"CSS": "https://developer.mozilla.org/en-US/docs/Web/CSS"},
+            {"Namecheap": "https://www.namecheap.com/"}
+        ],
+        "Links": [
+            {"Github": "https://github.com/jjjackross/dev-site-2"},
+            {"Website": "https://www.jackross.dev"}
+        ],
+        "DesktopVideo": "/videos/MatsuiDesktop.mp4"
     }
 ]

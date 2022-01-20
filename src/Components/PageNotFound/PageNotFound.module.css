@@ -1,10 +1,12 @@
 .messsageContainer {
-    margin: auto;
-    padding-top: 25%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 8vh 0;
 }
-.messsageContainer > h3 {
-    padding-top: 30px
+
+.messsageContainer > * {
+    margin-bottom: 50px;
 }
 
 .backMessage {
@@ -16,4 +18,15 @@
 .backMessage:hover {
     font-weight: 700;
     color: var(--color-black);
+}
+
+@media (max-width: 576px) {
+    .messsageContainer {
+        padding-top: 50%;
+        text-align: center;
+    }
+
+    .backMessage {
+        font-size: 1rem;
+    }
 }
