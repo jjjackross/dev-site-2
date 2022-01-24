@@ -1,4 +1,3 @@
-import react from "react";
 import styles from './ProjectInfo.module.css';
 
 const ProjectInfo = props => {
@@ -20,7 +19,7 @@ const ProjectInfo = props => {
             <div className={`${styles.dataRow} ${styles.linkRow}`}>
                 {
                     props.projectData.Tags.map((item, i) => {
-                        return <a href={Object.values(item)[0]} target="_blank" className={styles.tag}>{Object.keys(item)}</a>
+                        return <a href={Object.values(item)[0]} target="_blank" rel="noreferrer" className={styles.tag}>{Object.keys(item)}</a>
                     })
                 }
             </div>
@@ -29,7 +28,7 @@ const ProjectInfo = props => {
             <div className={`${styles.dataRow} ${styles.linkRow}`}>
                 {
                     props.projectData.Links.map((item, i) => {
-                        return <a href={Object.values(item)[0]} target="_blank" className={styles.link}>{Object.keys(item)}</a>
+                        return <a href={Object.values(item)[0]} target="_blank" rel="noreferrer" className={styles.link}>{Object.keys(item)}</a>
                     })
                 }
             </div>            

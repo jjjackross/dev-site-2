@@ -1,16 +1,22 @@
-import react from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import styles from './Nav.module.css';
 
 const Nav = props => {
+
+    // Uses the useLocation hook to return the current URL pathname when called.
+    const usePathname = () => {
+        const location = useLocation();
+        return location.pathname;
+    }
+
     return (
         <nav>
             <div className={styles.desktopNav}>
                 <div className={styles.navGroup}>
-                    <Link className={styles.mainNavLink} to="/">HOME</Link>
-                    <Link className={styles.mainNavLink} to="/work">WORK</Link>
-                    <Link className={styles.mainNavLink} to="/contact">CONTACT</Link>
+                    <Link className={`${styles.mainNavLink} ${usePathname() === '/' ? styles.currentPage : ''}`} to="/">HOME</Link>
+                    <Link className={`${styles.mainNavLink} ${usePathname() === '/work' ? styles.currentPage : ''}`} to="/work">WORK</Link>
+                    <Link className={`${styles.mainNavLink} ${usePathname() === '/contact' ? styles.currentPage : ''}`} to="/contact">CONTACT</Link>
                 </div>
 
                 <div className={styles.navGroup}>

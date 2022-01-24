@@ -1,13 +1,23 @@
-import react, { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from './InfoCard.module.css';
 
 const InfoCard = props => {
     const [showInfo, setShowInfo] = useState(false);
     const onClick = () => {
-        if (showInfo) { setShowInfo(false) } else {
+        if (showInfo === true) {
+            props.onCardSelect(null);
+            setShowInfo(false);
+        } else {
+            props.onCardSelect(props.listId);
             setShowInfo(true);
         }
     }
+
+    useEffect(() => {
+        if (props.currentCard != props.listId) {
+            setShowInfo(false);
+        }
+    }, [props.currentCard]);
     
     return (
         <div className={styles.infoButton} onClick={onClick}>

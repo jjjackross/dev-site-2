@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import { useState } from "react";
 
 import styles from './Work.module.css';
 
@@ -34,7 +34,7 @@ const Work = props => {
             <div className={styles.right}>
                 {
                     projectId === null ?
-                    <h3 className={styles.getStarted}>Select a project to get started!</h3> :
+                    <h3 className={styles.getStarted}>Select a project to view</h3> :
                     <ProjectInfo projectData={workData[projectId]} key={projectId}></ProjectInfo>
                 }
             </div>

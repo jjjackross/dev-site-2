@@ -1,4 +1,4 @@
-import react from "react";
+import { useState } from "react";
 
 import styles from './About.module.css';
 
@@ -7,7 +7,11 @@ import InfoCard from '../InfoCard/InfoCard';
 const infoData = require('../../json/about.json')
 
 const About = props => {
-    
+    const [currentCard, setCurrentCard] = useState(null)
+
+    const selectCard = (cardNumber) => {
+        setCurrentCard(cardNumber);
+    }
     
     return (
         <div className={styles.container}>
@@ -23,7 +27,7 @@ const About = props => {
             <div className={styles.right}>
                 {
                     infoData.map((info, i) => {
-                        return <InfoCard info={info} key={i} />
+                        return <InfoCard info={info} listId={i} currentCard={currentCard} onCardSelect={selectCard}/>
                     })
                 }
             </div>

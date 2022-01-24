@@ -19,6 +19,7 @@ MY COMMENTS REFLECT WHAT I THINK IS HAPPENING BUT I AM NOT 100% SURE */
     bottom: 15%;
     left: 50%;
     transform: translate(-35px, 0);
+    z-index: 1;
 }
 
 /* BUTTON STYLING */

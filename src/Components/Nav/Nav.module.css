@@ -67,6 +67,10 @@ svg:active {
     font-size: 1.2rem;
 }
 
+.currentPage {
+    font-weight: 600;
+}
+
 .mainNavLink:first-child {
     margin-top: 0;
 }
