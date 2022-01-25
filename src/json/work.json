@@ -1,9 +1,9 @@
 [
     {
-        "Name": "Portfolio Site",
+        "Name": "Developer Portfolio",
         "HomePhoto": "/img/Matsui.jpg",
-        "ShortDescription": "A place to showcase my projects",
-        "Overview": "Matsui America is an innovative company that specializes in next generation technologies that enhance injection molding performance. To build this website, I was provided a Photoshop Design and created the website using Craft CMS, TWIG (PHP Template Engine), Javascript, jQuery, and SASS",
+        "ShortDescription": "A place to showcase my projects & myself",
+        "Overview": "I built this site as my first official ReactJS project because it does not require a backend and has a simple overall structure making it a solid first option. After sketching the site on pencil and paper, I used Penpot to create a more realistic mockup. I wanted it to be natural and easy to use while still feeling unique. The site grabs content from JSON files making it extremely easy to add or remove projects.  After building the site with Node and ReactJS I bought the domain name and hosted the site on Netlify. I chose to host my site with Netlify because it’s free, provides a free SSL certificate, has built-in continuous integration via GitHub, and even provides a backend for my form.",
         "Tags": [
             {"React": "https://reactjs.org/"},
             {"Netlify": "https://www.netlify.com/"},

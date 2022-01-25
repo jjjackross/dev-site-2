@@ -1,18 +1,14 @@
 [
     {
         "title": "Goals as a Developer",
-        "content": ["To consistently write quality code that follows industry best practices", "To make a noticeably positive impact on a team, product or company", "To constantly improve and learn using all available resources"]
+        "content": ["To consistently write quality code that follows industry best practices", "To make a noticeably positive impact on a team, product, or company", "To continuously learn and improve utilizing all available resources"]
     },
     {
         "title": "My Skillset",
-        "content": ["content1 goes here", "content2 goes here", "content3 goes here"]
+        "content": ["My ability to learn and problem solve are my greatest skills", "JavaScript is my strongest language, with Python in second and C# in third", "I can use and understand many frameworks, libraries, and concepts"]
     },
     {
         "title": "Ideal Work Environment",
-        "content": ["Has compassionate team members who enjoy collaborating", "Creates a productive atmosphere to maximize efficiency", "Possesses an overall positive and optimistic ambience"]
-    },
-    {
-        "title": "Interests & Hobbies",
-        "content": ["Videography and video editing", "DJing and creating fun beats in Ableton Live", "Casual and competitive gaming with friends"]
+        "content": ["Possesses an overall positive and productive ambience", "Has passionate team members who enjoy collaborating", "Provides its occupants something to look forward to each day"]
     }
 ]
