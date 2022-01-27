@@ -20,7 +20,7 @@ const About = props => {
                     <h1>JACK ROSS</h1>
                     <h2>FULL STACK WEB DEVELOPER</h2>
                     <h3>CHICAGO, IL</h3>
-                    <p>I am an aspiring full-stack developer with experience in Python, C#, and JavaScript. I learned to code at Coding Dojo's Chicago campus, where we learned multiple full stacks. Since graduating, I have been working as an SEO web developer and have recently picked up ReactJS. I enjoy working in a team and collaborating with other passionate developers that I can learn from and support. I have also been working as a freelance videographer and video editor for some time.</p>
+                    <p>I am an aspiring full-stack developer with experience in Python, C# and JavaScript.  I trained at Coding Dojo's Chicago campus, where we learned multiple full stacks.  Since graduating, I have been working as an SEO web developer and have recently picked up ReactJS.  I enjoy working in a team and collaborating with other passionate developers that I can learn from and support.  I have also been working as a freelance videographer and video editor for some time creating marketing and on-line content for a number of clients.</p>
                 </div>
             </div>
 

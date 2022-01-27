@@ -53,7 +53,7 @@ input[type=submit] {
     padding: 15px;
     font-size: 1.2rem;
     margin-left: 300px;
-
+    transition-duration: .2s;
 }
 
 input[type=submit]:hover {
@@ -83,6 +83,7 @@ input[type=submit]:active {
     text-decoration: none;
     color: var(--color-gray);
     padding-top: 20px;
+    transition-duration: .2s;
 }
 
 .backMessage:hover {
@@ -90,23 +91,29 @@ input[type=submit]:active {
     color: var(--color-black);
 }
 
-@media (max-width: 576px) {
+/* Tablet */
+@media (max-width: 768px) {
     .container {
         flex-direction: column;
         padding: 5vh 0 0 0;
+        align-items: center;
     }
 
-    .left, .right {
-        width: 100%;
-        padding: 0 5%;
-    }
-
-    h1 {
+    .contactTitle {
         text-align: center;
     }
 
     .thankYouMessage {
         text-align: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+
+    .left, .right {
+        width: 100%;
+        padding: 0 5%;
     }
 
     input[type=text] {

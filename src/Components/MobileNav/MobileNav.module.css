@@ -1,5 +1,4 @@
-/* THIS CIRCULAR NAV IS A MODIFIED VERSION OF THE ORIGINAL: https://codepen.io/Kapilnemo/pen/gMgLWr/?editors=1100 
-MY COMMENTS REFLECT WHAT I THINK IS HAPPENING BUT I AM NOT 100% SURE */
+/* This circular nav is a modified version of the original: https://codepen.io/Kapilnemo/pen/gMgLWr/?editors=1100 */
 
 /* HIDES THE INPUT CHECKBOX USED TO TOGGLE NAV */
 .input {position: absolute; display: none}
@@ -135,7 +134,8 @@ i {
     color: var(--color-black);
 }
 
-@media (min-width: 577px) {
+/* Tablet */
+@media (min-width: 769px) {
     .mobileNav {
         display: none;
     }

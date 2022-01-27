@@ -1,7 +1,9 @@
 .infoButton {
-    outline: 1px solid var(--color-black);
+    border: 1px solid var(--color-black);
     padding: 10%;
     border-radius: 10px;
+    transition-duration: .6s;
+    transition-property: background-color;
 }
 
 .infoButton:hover {
@@ -10,15 +12,7 @@
 }
 
 .infoButton:active {
-    outline: 2px solid var(--color-gray);
-}
-
-.infoButton:first-of-type {
-    margin-top: 4px;
-}
-
-.infoButton:last-of-type {
-    margin-bottom: 4px;
+    border: 2px solid var(--color-gray);
 }
 
 .infoButton ul {
@@ -34,6 +28,7 @@
     padding-top: 25px;
 }
 
+/* Mobile */
 @media (max-width: 576px) {
     .infoButton {
         margin: 10px 0;

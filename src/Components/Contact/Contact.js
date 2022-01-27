@@ -14,7 +14,7 @@ const Contact = props => {
     return (
         <div className={styles.container}>
             <div className={styles.left}>
-                <h1>Contact Me</h1>
+                <h1 className={styles.contactTitle}>Contact Me</h1>
                 {
                     showThankYou ?
                     <div className={styles.thankYouMessage}>

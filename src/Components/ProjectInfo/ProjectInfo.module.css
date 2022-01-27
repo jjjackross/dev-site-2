@@ -13,12 +13,13 @@
 
 .tag {
     background-color: var(--color-red);
-    outline: 1px solid var(--color-cream);
+    border: 1px solid var(--color-cream);
     color: var(--color-cream);
     padding: 10px;
     border-radius: 8px;
     text-decoration: none;
-    margin: 5px; 
+    margin: 5px;
+    transition-duration: .2s;
 }
 
 .tag:first-of-type {
@@ -30,22 +31,23 @@
 }
 
 .tag:hover {
-    outline: 1px solid var(--color-gray);
+    border: 1px solid var(--color-gray);
     font-weight: 600;
 }
 
 .tag:active {
-    outline: 2px solid var(--color-black);
+    border: 2px solid var(--color-black);
 }
 
 .link {
     background-color: var(--color-cream);
-    outline: 1px solid var(--color-gray);
+    border: 1px solid var(--color-gray);
     color: var(--color-gray);
     padding: 10px;
     border-radius: 8px;
     text-decoration: none;
-    margin: 5px; 
+    margin: 5px;
+    transition-duration: .2s;
 }
 
 .link:first-of-type {
@@ -64,7 +66,7 @@
 
 .link:active {
     background-color: var(--color-black);
-    outline-color: var(--color-black);
+    border-color: var(--color-black);
 }
 
 hr {
@@ -76,7 +78,21 @@ hr {
     display: none;
 }
 
+/* Tablet */
+@media (max-width: 768px) {
+    .bottomSpacer {
+        display: block;
+        height: 5vw;
+        width: auto;
+    }
+  }
+
+/* Mobile */
 @media (max-width: 576px) {
+    .bottomSpacer {
+        height: 150px;
+    }
+
     .dataContainer {
         text-align: center;
     }
@@ -97,44 +113,13 @@ hr {
         border: none;
     }
 
-    .bottomSpacer {
-        display: block;
-        height: 150px;
-        width: auto;
-        /* background-color: red; */
-    }
-
     /* Animation */
     .dataContainer {
         -webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
-
-    @-webkit-keyframes fade-in-fwd {
-        0% {
-          -webkit-transform: translateZ(-80px);
-                  transform: translateZ(-80px);
-          opacity: 0;
-        }
-        100% {
-          -webkit-transform: translateZ(0);
-                  transform: translateZ(0);
-          opacity: 1;
-        }
-      }
-      @keyframes fade-in-fwd {
-        0% {
-          -webkit-transform: translateZ(-80px);
-                  transform: translateZ(-80px);
-          opacity: 0;
-        }
-        100% {
-          -webkit-transform: translateZ(0);
-                  transform: translateZ(0);
-          opacity: 1;
-        }
-      }
 }
+
 
 @media (min-width: 577px) {
     /* Animation */
@@ -142,30 +127,56 @@ hr {
         -webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
-
-    @-webkit-keyframes fade-in-left {
-        0% {
-          -webkit-transform: translateX(-50px);
-                  transform: translateX(-50px);
-          opacity: 0;
-        }
-        100% {
-          -webkit-transform: translateX(0);
-                  transform: translateX(0);
-          opacity: 1;
-        }
-      }
-
-      @keyframes fade-in-left {
-        0% {
-          -webkit-transform: translateX(-50px);
-                  transform: translateX(-50px);
-          opacity: 0;
-        }
-        100% {
-          -webkit-transform: translateX(0);
-                  transform: translateX(0);
-          opacity: 1;
-        }
-      }
 }
+
+/* Animation */
+@-webkit-keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+
+@-webkit-keyframes fade-in-left {
+    0% {
+      -webkit-transform: translateX(-50px);
+              transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in-left {
+    0% {
+      -webkit-transform: translateX(-50px);
+              transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }

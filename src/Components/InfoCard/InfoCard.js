@@ -23,7 +23,7 @@ const InfoCard = props => {
         <div className={styles.infoButton} onClick={onClick}>
             <h2>{props.info.title}</h2>
             {
-                showInfo ?
+            showInfo ?
                 <ul>
                     {
                         props.info.content.map((bullet, i) => {
@@ -31,7 +31,7 @@ const InfoCard = props => {
                         })
                     }
                 </ul>
-                 : ''
+            : ''
             }
         </div>
     )

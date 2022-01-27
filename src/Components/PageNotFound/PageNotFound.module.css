@@ -13,6 +13,7 @@
     text-decoration: none;
     color: var(--color-gray);
     font-size: 1.5rem;
+    transition-duration: .2s;
 }
 
 .backMessage:hover {
@@ -20,7 +21,8 @@
     color: var(--color-black);
 }
 
-@media (max-width: 576px) {
+/* Laptop */
+@media (max-width: 1024px) {
     .messsageContainer {
         padding-top: 50%;
         text-align: center;

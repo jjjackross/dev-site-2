@@ -34,10 +34,12 @@
 }
 
 .projectButton {
-    outline: 1px solid var(--color-black);
+    border: 1px solid var(--color-black);
     padding: 8%;
     margin-bottom: 20px;
     border-radius: 10px;
+    transition-duration: .6s;
+    transition-property: background-color;
 }
 
 .projectButton p {
@@ -50,7 +52,7 @@
 }
 
 .projectButton:active {
-    outline: 2px solid var(--color-gray);
+    border: 2px solid var(--color-gray);
 }
 
 .projectButton:last-of-type {
@@ -68,6 +70,29 @@
     z-index: -1;
 }
 
+/* Laptop */
+@media (max-width: 1024px) {
+    .workTitle {
+        font-size: 2rem;
+    }
+  }
+
+/* Tablet */
+@media (max-width: 768px) {
+    .workTitle {
+        font-size: 1.6rem;
+    }
+
+    .projectButton h3 {
+        font-size: .9rem;
+    }
+
+    .projectButton p {
+        font-size: .8rem;
+    }
+  }
+
+/* Mobile */
 @media (max-width: 576px) {
     .container {
         flex-direction: column;

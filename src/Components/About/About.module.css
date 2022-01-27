@@ -21,7 +21,7 @@
 .right {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     overflow: auto;
 }
 
@@ -42,6 +42,14 @@
     line-height: 1.8;
 }
 
+/* Laptop L */
+@media (max-width: 1440px) {
+    .left, .right {
+        padding: 0 5%;
+    }
+}
+
+/* Mobile */
 @media (max-width: 576px) {
     .container {
         flex-direction: column;
