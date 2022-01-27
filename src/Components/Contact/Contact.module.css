@@ -1,3 +1,4 @@
+/* Container styling */
 .container {
     display: flex;
     justify-content: space-between;
@@ -11,10 +12,12 @@
     padding: 0 5%;
 }
 
+/* Page-specific styling */
 .left h1 {
     margin-bottom: 10px;
 }
 
+/* Form styling */
 .input:not(:last-child) {
     display: block;
     padding: 1vh;
@@ -71,6 +74,7 @@ input[type=submit]:active {
     color: var(--color-gray);
 }
 
+/* Form submitted message styling */
 .thankYouMessage {
     text-align: left;
     display: flex;
@@ -93,6 +97,7 @@ input[type=submit]:active {
 
 /* Tablet */
 @media (max-width: 768px) {
+    /* Centers and spaces form on tablets or smaller */
     .container {
         flex-direction: column;
         padding: 5vh 0 0 0;
@@ -110,7 +115,7 @@ input[type=submit]:active {
 
 /* Mobile */
 @media (max-width: 576px) {
-
+    /* More form styling but on mobile or smaller */
     .left, .right {
         width: 100%;
         padding: 0 5%;

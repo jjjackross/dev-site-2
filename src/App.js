@@ -4,6 +4,7 @@ import {
   Switch
 } from "react-router-dom";
 
+// Imports all the top level component's we'll be using
 import Nav from './Components/Nav/Nav';
 import MobileNav from './Components/MobileNav/MobileNav';
 import About from './Components/About/About';
@@ -17,8 +18,10 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        {/* One component for desktop nav and another for mobile nav */}
         <Nav />
         <MobileNav />
+        {/* The components with actual content & our error 404 component */}
         <main>
           <Switch>
             <Route exact path="/" component={About} />

@@ -1,3 +1,4 @@
+/* Container styling */
 .messsageContainer {
     display: flex;
     flex-direction: column;
@@ -9,6 +10,7 @@
     margin-bottom: 50px;
 }
 
+/* Text styling */
 .backMessage {
     text-decoration: none;
     color: var(--color-gray);
@@ -23,6 +25,7 @@
 
 /* Laptop */
 @media (max-width: 1024px) {
+    /* Adjust's styling when screen shrinks */
     .messsageContainer {
         padding-top: 50%;
         text-align: center;

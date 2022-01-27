@@ -1,3 +1,4 @@
+/* Container styling */
 .dataRow {
     margin-bottom: 25px;
 }
@@ -11,6 +12,7 @@
     align-items: flex-start;
 }
 
+/* Styling for the tech tags */
 .tag {
     background-color: var(--color-red);
     border: 1px solid var(--color-cream);
@@ -39,6 +41,7 @@
     border: 2px solid var(--color-black);
 }
 
+/* Styling for the related site links */
 .link {
     background-color: var(--color-cream);
     border: 1px solid var(--color-gray);
@@ -69,17 +72,20 @@
     border-color: var(--color-black);
 }
 
+/* Styles the page break */
 hr {
     margin-top: 5px;
     width: 200px;
 }
 
+/* Makes bottom spacer not show on large screen */
 .bottomSpacer {
     display: none;
 }
 
 /* Tablet */
 @media (max-width: 768px) {
+    /* Show bottom spacer on tablets or smaller */
     .bottomSpacer {
         display: block;
         height: 5vw;
@@ -89,10 +95,12 @@ hr {
 
 /* Mobile */
 @media (max-width: 576px) {
+    /* More spacer styling */
     .bottomSpacer {
         height: 150px;
     }
 
+    /* Container styling */
     .dataContainer {
         text-align: center;
     }
@@ -105,6 +113,7 @@ hr {
         margin-bottom: 15px;
     }
 
+    /* Adjusts page break styling for mobile */
     hr {
         width: 150px;
         height: 1px;
@@ -123,6 +132,7 @@ hr {
 
 @media (min-width: 577px) {
     /* Animation */
+    /* Changes fade-in direction when screeen is bigger than mobile */
     .dataContainer {
         -webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;

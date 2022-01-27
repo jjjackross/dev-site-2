@@ -1,5 +1,7 @@
+/* Import all weights of our font */
 @import url('https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900');
 
+/* Our color palette */
 :root {
   --color-cream: #fffcf2;
   --color-clay: #ccc5b9;
@@ -8,10 +10,12 @@
   --color-red: #eb5e28;
 }
 
+/* Set's page color */
 html {
   background-color: var(--color-cream);
 }
 
+/* Boiler plate styling */
 * {
   margin: 0;
   padding: 0;
@@ -21,11 +25,13 @@ html {
   /* outline: 1px solid pink; */
 }
 
+/* Basic column layout */
 .App {
   display: flex;
   justify-content: space-between;
 }
 
+/* Sets size of the page minus the Nav and applies fade in/out animation */
 main {
  width: 75vw;
  overflow: hidden;
@@ -36,6 +42,7 @@ main * {
   animation: fade-in 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
+/* Font and header sizes when on Desktop */
 h1 {
   font-size: 4rem;
   font-weight: 900;
@@ -64,6 +71,7 @@ p {
 
 /* Laptop L */
 @media (max-width: 1440px) {
+  /* Font and header sizes */
   h1 {
     font-size: 3.3rem;
   }
@@ -79,10 +87,7 @@ p {
 
 /* Laptop */
 @media (max-width: 1024px) {
-  main {
-    width: 100vw;
-  }
-
+  /* Font and header sizes */
   h1 {
     font-size: 2.5rem;
   }
@@ -94,6 +99,12 @@ p {
 
 /* Tablet */
 @media (max-width: 768px) {
+  /* Sets width too 100% of viewport width when Nav disappears and MobileNav appears */
+  main {
+    width: 100vw;
+  }
+
+  /* Font and header sizes */
   h1 {
     font-size: 2.3rem;
   }
@@ -108,9 +119,9 @@ p {
 }
 
 /* Mobile */
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
 
-}
+} */
 
 /* Animation */
 @-webkit-keyframes fade-in {

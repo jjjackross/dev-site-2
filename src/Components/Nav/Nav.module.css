@@ -1,8 +1,10 @@
+/* Animation to play when Nav first loads */
 .desktopNavContainer {
     -webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
+/* Container styling */
 nav {
     position: relative;
     display: inline;
@@ -26,12 +28,12 @@ nav {
     align-items: center;
 }
 
+/* SVG button styling */
 svg {
     width: 12%;
     fill: var(--color-gray);
     background-color: var(--color-cream);
     border-radius: 15px;
-    /* padding: 5px; */
 }
 
 svg:first-child {
@@ -54,6 +56,7 @@ svg:active {
     box-shadow: none;
 }
 
+/* Bottom links styling */
 .iconLinks {
     display: flex;
     flex-direction: row;
@@ -70,6 +73,7 @@ svg:active {
     border: 2px solid var(--color-gray);
 }
 
+/* Top links styling */
 .mainNavLink {
     color: var(--color-gray);
     background-color: var(--color-cream);
@@ -80,10 +84,6 @@ svg:active {
     font-weight: 400;
     font-size: 1.2rem;
     transition-duration: .2s;
-}
-
-.currentPage {
-    font-weight: 600;
 }
 
 .mainNavLink:first-child {
@@ -107,6 +107,12 @@ svg:active {
     box-shadow: none;
 }
 
+/* Increases the font weight of the button whose page we are currently on */
+.currentPage {
+    font-weight: 600;
+}
+
+/* Styling for the vertical link that "connects" all the buttons */
 .verticalLine {
     width: 2px;
     height: 100vh;
@@ -144,9 +150,9 @@ svg:active {
     }
   }
 
-/* Hides the desktop navigation and vertical line design on mobile. */
 /* Laptop L */
 @media (max-width: 1440px) {
+    /* SVG Button styling */
     .iconLink {
         border-radius: 10px;
         width: 15%;
@@ -155,6 +161,7 @@ svg:active {
 
 /* Laptop */
 @media (max-width: 1024px) {
+    /* SVG Button styling */
     .iconLink {
         width: 20%;
     }
@@ -162,6 +169,7 @@ svg:active {
 
 /* Tablet */
 @media (max-width: 768px) {
+    /* Hides the desktop navigation and vertical line design on tablet or smaller. */
     .desktopNav, .verticalLine {
         display: none;
     }

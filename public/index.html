@@ -2,26 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <!-- Links to our site's favicon and web manifest -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <!-- Our site's meta description -->
     <meta
       name="description"
       content="Jack Ross is a full stack web developer seeking employment using JavaScript, Python or C#."
     />
+    <!-- Our site's meta title -->
     <title>Jack Ross | Full Stack Web Developer</title>
   </head>
   <body>
+    <!-- Need this form here to connect our contact page form with netlify's backend -->
     <form name="contact-me-form" netlify netlify-honeypot="bot-field" action="/" hidden>
       <input type="text" name="name"/>
       <input type="text" name="email"/>
       <input type="text" name="reference"/>
       <textarea name="message"></textarea>
     </form>
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
     <div id="root"></div>
     <!--
       This HTML file is a template.

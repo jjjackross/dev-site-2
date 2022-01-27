@@ -1,3 +1,4 @@
+/* General button styling */
 .infoButton {
     border: 1px solid var(--color-black);
     padding: 10%;
@@ -15,6 +16,7 @@
     border: 2px solid var(--color-gray);
 }
 
+/* Info button content styling */
 .infoButton ul {
     list-style-type: none;
 }

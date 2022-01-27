@@ -1,3 +1,4 @@
+/* General container styling */
 .container {
     display: flex;
     justify-content: space-between;
@@ -25,6 +26,7 @@
     overflow: auto;
 }
 
+/* Content styling */
 .content > *:not(:first-child) {
     padding: 10px 0;
 }
@@ -44,13 +46,15 @@
 
 /* Laptop L */
 @media (max-width: 1440px) {
+    /* Spacing adjustments */
     .left, .right {
-        padding: 0 5%;
+        padding: 0 4%;
     }
 }
 
 /* Mobile */
 @media (max-width: 576px) {
+    /* Spacing adjustments */
     .container {
         flex-direction: column;
         padding: 5vh 0 0 0;
@@ -58,7 +62,7 @@
     
     .left, .right {
         width: 100%;
-        padding: 0 5%;
+        padding: 0 6%;
     }
 
     .content p {
