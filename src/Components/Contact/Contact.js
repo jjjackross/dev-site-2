@@ -25,8 +25,7 @@ const Contact = props => {
                         <Link to="/" className={styles.backMessage}>&#10229; Back to the home page</Link><Link to="/work" className={styles.backMessage}>&#10229; View some of my work</Link>
                     </div> :
                     // Contact Form
-                    <form name="contact-me-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit={onSubmit}>
-                        <input type="hidden" name="form-name" value="contact-me-form" />
+                    <form name="contact-me" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit={onSubmit}>
                         <strong><label className={styles.label}>Name</label></strong>
                         <input type="text" className={styles.input} name="name"/>
                         <strong><label className={styles.label}>Email</label></strong>
