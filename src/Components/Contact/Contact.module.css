@@ -95,6 +95,10 @@ input[type=submit]:active {
     color: var(--color-black);
 }
 
+.hidden {
+    display: none;
+}
+
 /* Tablet */
 @media (max-width: 768px) {
     /* Centers and spaces form on tablets or smaller */

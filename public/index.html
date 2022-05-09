@@ -8,7 +8,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fffcf2" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#252422" />
     <!-- Our site's meta description -->
     <meta
       name="description"
@@ -16,28 +17,19 @@
     />
     <!-- Our site's meta title -->
     <title>Jack Ross | Full Stack Web Developer</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZF4PRNXDBE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZF4PRNXDBE');
+    </script>
   </head>
   <body>
-    <!-- Need this form here to connect our contact page form with netlify's backend -->
-    <form name="contact-me-form" netlify netlify-honeypot="bot-field" action="/" hidden>
-      <input type="text" name="name"/>
-      <input type="text" name="email"/>
-      <input type="text" name="reference"/>
-      <textarea name="message"></textarea>
-    </form>
-
     <noscript>You need to enable JavaScript to run this app.</noscript>
-
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
