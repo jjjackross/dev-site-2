@@ -25,7 +25,13 @@ const Contact = props => {
                         <Link to="/" className={styles.backMessage}>&#10229; Back to the home page</Link><Link to="/work" className={styles.backMessage}>&#10229; View some of my work</Link>
                     </div> :
                     // Contact Form
-                    <form name="contact-me" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit={onSubmit}>
+                    <form
+                    name="contact-me"
+                    method="POST"
+                    data-netlify="true"
+                    netlify-honeypot="company-name"
+                    onSubmit={onSubmit}>
+                        <input type="hidden" name="contact-me" value="contact-me" />
                         <strong><label className={styles.label}>Name</label></strong>
                         <input type="text" className={styles.input} name="name"/>
                         <strong><label className={styles.label}>Email</label></strong>
@@ -35,7 +41,7 @@ const Contact = props => {
                         <strong><label className={styles.label}>Message</label></strong>
                         <textarea rows="10" className={styles.input} name="message"></textarea>
                         {/* Bot field for detecting spam */}
-                        <label className={styles.hidden}>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                        <label className={styles.hidden}>Company Name <input name="company-name" /></label>
                         <input type="submit" className={styles.input}/>
                     </form>
                 }
