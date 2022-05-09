@@ -41,7 +41,8 @@ const Contact = props => {
                         <strong><label className={styles.label}>Message</label></strong>
                         <textarea rows="10" className={styles.input} name="message"></textarea>
                         {/* Bot field for detecting spam */}
-                        <label className={styles.hidden}>Company Name <input name="company-name" /></label>
+                        <label className={styles.hidden}>Company Name</label>
+                        <input className={styles.hidden} name="company-name" />
                         <input type="submit" className={styles.input}/>
                     </form>
                 }
