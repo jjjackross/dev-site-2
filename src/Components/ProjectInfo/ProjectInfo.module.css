@@ -113,6 +113,10 @@ hr {
         text-align: center;
     }
 
+    .dataContainer p {
+        text-align: justify;
+    }
+
     .linkRow {
         justify-content: center;
     }
