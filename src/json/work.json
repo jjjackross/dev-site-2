@@ -12,13 +12,13 @@
             {"Penpot": "https://penpot.app/"}
         ],
         "Links": [
-            {"Github": "https://github.com/jjjackross/dev-site-2"},
-            {"Website": "https://www.jackross.dev"}
+            {"Website": "https://www.jackross.dev"},
+            {"GitHub": "https://github.com/jjjackross/dev-site-2"}
         ]
     },
     {
         "Name": "Digital Huddle",
-        "ShortDescription": "Digital marketing industry news ",
+        "ShortDescription": "Digital marketing industry news",
         "Overview": "Digital Huddle is a tech publisher that prides themselves on providing traditional methods and best practices for all things digital marketing. Digital Huddle was built on a custom wordpress theme with Advanced Custom Fields, PHP, JavaScript, WP Engine and Cloudflare. Advanced Custom Fields made it easy to add custom content without some of the constraints of a typical page builder. WP Engine is a very popular WordPress host and they made it extremely easy to host and manage our site. Cloudflare helps deliver content thus improving site speed while also providing a base level of cyber security. JavaScript and PHP are essential building blocks to any WP site.",
         "Tags": [
             {"WordPress": "https://wordpress.com/"},
@@ -30,6 +30,22 @@
         ],
         "Links": [
             {"Website": "https://digitalhuddle.com/"}
+        ]
+    },
+    {
+        "Name": "Superior Succulents",
+        "ShortDescription": "A built from scratch Shopify store",
+        "Overview": "",
+        "Tags": [
+            {"Shopify": "https://www.shopify.com/"},
+            {"Tailwind CSS": "https://tailwindcss.com/"},
+            {"Alpine JS": "https://alpinejs.dev/"},
+            {"Liquid": "https://shopify.dev/api/liquid"},
+            {"JavaScript": "https://www.javascript.com/"}
+        ],
+        "Links": [
+            {"Website": "https://superior-succulents.myshopify.com/"},
+            {"GitHub": "https://github.com/jjjackross/super-succulents"}
         ]
     }
 ]
