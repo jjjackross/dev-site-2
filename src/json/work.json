@@ -35,7 +35,7 @@
     {
         "Name": "Superior Succulents",
         "ShortDescription": "A built from scratch Shopify store",
-        "Overview": "Superior Succulents is a Shopify store and theme that I built from scratch. I built as practice building Shopify themes, as a portfolio piece, and so I have a 'playground' to try out whatever may come to mind. I chose to use TailwindCSS for this project so that I could learn a new way to handle CSS. JavaScript is used for some smaller DOM interactions as well as for communcating with the Shopify API and forms. Liquid is the required templating language that Shopify uses. And finally Alpine JS was used for DOM interactions as well, namely the search bar and mobile navigation menu.",
+        "Overview": "Superior Succulents is a Shopify store and theme that I built from scratch. I built it as practice building Shopify themes, as a portfolio piece, and so I have a 'playground' to try out whatever may come to mind. I chose to use TailwindCSS for this project so that I could learn a new way to handle CSS. JavaScript is used for some smaller DOM interactions as well as for communcating with the Shopify API and forms. Liquid is the required templating language that Shopify uses. And finally Alpine JS was used for DOM interactions as well, namely the search bar and mobile navigation menu.",
         "Tags": [
             {"Shopify": "https://www.shopify.com/"},
             {"Tailwind CSS": "https://tailwindcss.com/"},
